@@ -32,6 +32,7 @@ After writing the `.tex`, compile with `scripts/compile_latex.py`.
 
 % ── Packages ─────────────────────────────────────────────────────────────────
 \usepackage{amsmath, amssymb, bm}
+\usepackage{graphicx}            % for \includegraphics
 \usepackage{tcolorbox}
 \tcbuselibrary{skins}
 
@@ -185,6 +186,65 @@ For labeled sets with underbrace:
       \underbrace{\{\text{second condition}\}}_{B}
     \Bigr) \\
 ```
+
+---
+
+### image — Slide with image only (no text body)
+
+Images extracted by `extract_content.py` go to the `images/` subfolder.
+Use paths exactly as returned in `image_paths`, e.g. `images/slide_04_img_01.png`.
+
+```latex
+\begin{frame}{Frame Title}
+  \begin{center}
+    \includegraphics[width=0.92\textwidth,
+                     height=0.75\textheight,
+                     keepaspectratio]{images/slide_04_img_01.png}
+  \end{center}
+\end{frame}
+```
+
+### image+text — Slide with text above and image below
+
+```latex
+\begin{frame}{Frame Title}
+  Introductory sentence or brief explanation.
+
+  \medskip
+
+  \begin{center}
+    \includegraphics[width=0.88\textwidth,
+                     height=0.60\textheight,
+                     keepaspectratio]{images/slide_08_img_01.png}
+  \end{center}
+\end{frame}
+```
+
+### image-multi — Two images side by side
+
+```latex
+\begin{frame}{Frame Title}
+  \begin{columns}[c]
+    \column{0.5\textwidth}
+    \centering
+    \includegraphics[width=\linewidth,
+                     height=0.70\textheight,
+                     keepaspectratio]{images/slide_19_img_01.jpg}
+
+    \column{0.5\textwidth}
+    \centering
+    \includegraphics[width=\linewidth,
+                     height=0.70\textheight,
+                     keepaspectratio]{images/slide_19_img_02.jpg}
+  \end{columns}
+\end{frame}
+```
+
+**Rules for images:**
+- Always use `keepaspectratio` — never stretch or crop
+- `width=0.92\textwidth, height=0.75\textheight` for full-slide images
+- `width=0.88\textwidth, height=0.60\textheight` when text is also present
+- Require `\usepackage{graphicx}` in preamble
 
 ---
 

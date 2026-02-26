@@ -21,8 +21,9 @@ After writing the `.tex`, compile with `scripts/compile_latex.py`.
 \setbeamercolor{palette tertiary} {bg=cuhkblue!40!white, fg=white}
 \setbeamercolor{palette quaternary}{bg=cuhkblue!40!white, fg=white}
 
-% ── Math packages ──────────────────────────────────────────────────────────────
+% ── Math + image packages ──────────────────────────────────────────────────────
 \usepackage{amsmath, amssymb, bm}
+\usepackage{graphicx}            % for \includegraphics
 
 % ── Metadata → footer: left=short author | center=short title | right=page ────
 \title[COURSE $|$ Lecture N]{COURSE: Full Title}

@@ -40,9 +40,10 @@ After writing the `.tex`, compile with `scripts/compile_latex.py`.
 \setbeamertemplate{itemize subitem}{\scriptsize$\bullet$}
 \setbeamertemplate{itemize subsubitem}{\scriptsize$\bullet$}
 
-% ── Math + tikz packages ─────────────────────────────────────────────────────
+% ── Math + tikz + image packages ─────────────────────────────────────────────
 \usepackage{amsmath, amssymb, bm}
 \usepackage{tikz}
+\usepackage{graphicx}            % for \includegraphics
 
 % ── Full-width rounded title box via tikz overlay ────────────────────────────
 % anchor=north west at current page.north west guarantees left-to-right coverage.
