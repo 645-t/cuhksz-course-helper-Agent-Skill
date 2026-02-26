@@ -1,4 +1,4 @@
-[README.md](https://github.com/user-attachments/files/25586545/README.md)
+[README_中文.md](https://github.com/user-attachments/files/25586578/README_.md)
 # CUHK-SZ Course Helper Agent Skill
 
 A [Claude Code](https://claude.ai/claude-code) skill that standardizes, reformats, and enriches academic course materials for **The Chinese University of Hong Kong, Shenzhen (CUHK-SZ)**.
@@ -180,3 +180,6 @@ cuhksz-course-helper/
 - The `.tex` source is kept alongside the PDF so that you can make manual edits.
 - Image extraction from PPTX requires slides to contain actual embedded Picture shapes
   (not linked or OLE objects).
+
+
+
