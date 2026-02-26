@@ -1,4 +1,4 @@
-[README.md](https://github.com/user-attachments/files/25585670/README.md)
+[README.md](https://github.com/user-attachments/files/25586545/README.md)
 # CUHK-SZ Course Helper Agent Skill
 
 A [Claude Code](https://claude.ai/claude-code) skill that standardizes, reformats, and enriches academic course materials for **The Chinese University of Hong Kong, Shenzhen (CUHK-SZ)**.
@@ -7,9 +7,8 @@ A [Claude Code](https://claude.ai/claude-code) skill that standardizes, reformat
 
 ## Who Is This For
 
-- **Instructors and TAs** who prepare lecture slides, tutorials, or exams and want them
-  reformatted to match official CUHK-SZ department templates automatically.
-- **Students** who want a consistently formatted, enhanced version of course materials for self-study and prepare their own presentation, academic report or meeting slides.
+- **Students** who want CUHK-SZ-styled, consistently formatted, and content-enhanced course materials for self-study or to prepare their own presentations, academic reports, and meeting slides. Printable answer versions of exam past papers are also just one request away.
+- **Professors and TAs** who need slides or exam papers automatically reformatted to approximate official CUHK-SZ department templates.
 - Anyone working with CUHK-SZ course files (PPTX, PDF, DOCX) who needs quick
   conversion to pixel-perfect LaTeX Beamer PDFs.
 
@@ -19,14 +18,14 @@ A [Claude Code](https://claude.ai/claude-code) skill that standardizes, reformat
 
 ### Three Official Templates
 
-| Template | Representative courses |  |
+| Template | Source courses |  |
 |---|---|---|
 | **MATH** |  MAT2040| 
 | **CS** | DDA3020 | 
 | **STATS** | STA2001 |
 
 All three are generated from **LaTeX Beamer** (`\usetheme{Boadilla}`) for pixel-perfect
-fidelity — colors are extracted directly from real department PDFs.
+fidelity — colors are extracted directly from real department PDFs. You can also supply your own template to the Agent.
 
 ### Slides Structural Standardization
 
@@ -170,7 +169,7 @@ cuhksz-course-helper/
 | enhancement | `[original_name]_enhanced.pdf` |
 | Answer generation | `[original_name]_answers.tex` + `[original_name]_answers.pdf` |
 
-Original files are never overwritten.
+**Original files are never overwritten.**
 
 ---
 
