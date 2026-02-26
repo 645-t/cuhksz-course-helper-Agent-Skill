@@ -238,6 +238,11 @@ When extracting from PPTX with `scripts/extract_content.py`:
 ```
 [Input file received]
       |
+[Run: python scripts/ensure_deps.py]
+  --> auto-installs missing Python packages (python-pptx, pymupdf)
+  --> auto-installs missing LaTeX (MiKTeX/BasicTeX/TeX Live by platform)
+  --> exit 0: continue  |  exit 1: warn user and abort
+      |
 [Quick scan: detect course code / instructor / style / file type]
       |
 [Intake: AskUserQuestion for any missing: course info, style (by course code), level]
@@ -270,6 +275,7 @@ When extracting from PPTX with `scripts/extract_content.py`:
 - `references/slide_structure.md` — Slide type classification guide
 - `references/level2_workflow.md` — L2 search and augmentation workflow
 - `references/academic_standards.md` — Academic formatting rules
+- `scripts/ensure_deps.py` — Check and auto-install all dependencies (run first)
 - `scripts/compile_latex.py` — Compile `.tex` → PDF (pdflatex ×2, temp folder auto-cleaned)
 - `scripts/extract_content.py` — Extract content + images from PPTX to JSON
 - `scripts/convert_to_pdf.py` — Convert PPTX → PDF
