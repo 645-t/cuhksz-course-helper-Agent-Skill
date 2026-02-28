@@ -1,4 +1,4 @@
-[README_中文.md](https://github.com/user-attachments/files/25586578/README_.md)
+[README_中文.md](https://github.com/645-t/cuhksz-course-helper-Agent-Skill/blob/main/README_中文.md)
 # CUHK-SZ Course Helper Agent Skill
 
 A [Claude Code](https://claude.ai/claude-code) skill that standardizes, reformats, and enriches academic course materials for **The Chinese University of Hong Kong, Shenzhen (CUHK-SZ)**.
